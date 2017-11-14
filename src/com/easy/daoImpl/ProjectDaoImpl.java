@@ -82,29 +82,7 @@ public class ProjectDaoImpl implements ProjectDao{
 
 	@Override
 	public List<Project> selectAll() {
-		conn = JDBCTools.getConnection();
-		List<Project> list = new ArrayList<>();
-		String sql = "select pro_id,pro_name,to_char(start_time,'yyyy-mm-dd') start_time,to_char(end_time,'yyyy-mm-dd') end_time,header from project";
-		try {
-			pstm = conn.prepareStatement(sql);
-			rs = pstm.executeQuery();
-			while (rs.next()) {
-				Project project = new Project();
-				project.setProid(rs.getInt(1));
-				project.setProname(rs.getString(2));
-				project.setStart_time(rs.getString(3));
-				project.setEnd_time(rs.getString(4));
-				project.setHeader(rs.getInt(5));
-				list.add(project);
-			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}finally{
-			JDBCTools.closeAll(rs, pstm, conn);
-		}
 		
-		return list;
 	}
 
 	@Override
