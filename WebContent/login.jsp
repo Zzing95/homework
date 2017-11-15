@@ -182,10 +182,10 @@
 				<div class="login_box">
 					<h1>项目管理</h1>
 				</div>
-					<form action="UserServlet" method="post">
+					<form action="UsersServlet" method="post">
 						<br><br><br>
-						账号 ：  <input type="text" name="username" placeholder="请输入账号"><br><br>
-						密码 ： <input type="text" name="password" placeholder="请输入密码"><br>
+						账号 ：  <input type="text" name="username" ><br><br>
+						密码 ： <input type="text" name="password" ><br>
 						<input type="submit" id=login value="登    录">
 					</form>
 					
