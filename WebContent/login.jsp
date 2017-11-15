@@ -12,7 +12,10 @@
 				
 			}
 			.container{
-				min-height: 500px;
+				min-height: 870px;
+				background-color: #eff4fa;
+				
+			
 			}
 			div{
 				display: block;
@@ -104,14 +107,15 @@
 		
 			.footer{
 				position: static;
-				margin-bottom: 0px;
+				margin-bottom: 50px;
 				margin-left: 0px;
 				margin-right: 0px;
-				line-height: 36px;
+				line-height: 40px;
 				text-align: center;
 				color: #b6b6b6;
 				background-color: #EFF4FA;
 				border-top: 1px solid #d6dfea;
+				margin-top: -70px;
 				
 				
 			}

@@ -7,13 +7,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>项目管理首页</title>
 <style type="text/css">
-			body{
+		body{
 				font-family: "微软雅黑";
 				font-size: 12px;
 				
 			}
 			.container{
-				min-height: 500px;
+				min-height: 870px;
+				background-color: #eff4fa;
+				
+			
 			}
 			div{
 				display: block;
@@ -26,23 +29,6 @@
 				background-color: #eff4fa ;
 				
 			}
-			.content{
-			    width: 960px;
-				margin: 20px auto;
-				padding: 0px 50px ;
-				}
-			.form{
-				margin-top:30px ;
-				font-size: 20px;
-				
-			}
-			.look{
-				margin-top: 10px;
-				color: #1D5494;
-				text-decoration: none;
-				font-size: 20px;
-			}
-		
 			#logo{
 				color: #1d5494;
 				width: 280px;
@@ -69,23 +55,123 @@
 			.header_link_a{
 				color: #1D5494;
 				text-decoration: none;
-				
 			}
 			
-			
-			
+			.content{
+				width: 960px;
+				margin-left : 700px ;
+				margin-top : 100px ;
+				padding: 0px 24px ;
+				
+				
+			}
+			.form{
+				margin-top:30px ;
+				font-size: 20px;
+				
+			}
+			.look{
+				margin-top: 30px;
+				color: #1D5494;
+				text-decoration: none;
+				font-size: 20px;
+				margin-left: -100px;
+				
+			}
+			.content_wrapper{
+				min-height: 372px;
+				padding-top: 40px;
+				margin: 0px 20px 60px 25px;
+				
+			}
+			.login_pictures{
+				position: relative;
+				margin-right: 395px;
+				
+			}
+			.login_container{
+				width: 334px;
+				height: 387px;
+				visibility: visible;
+				float: right;
+				border: 1px solid #a0b1c4;
+				background-color: #FFFFFF
+				position: relative;
+				padding: 0px;
+				border-radius: 5px;
+				overflow: hidden;
+				z-index: 12px;
+				text-align: center;
+				
+				
+			}
+			.login_pictures_picture{
+				position: absolute;
+				margin-left: -130px;
+				margin-right: 0px;
+				margin-top: 0px;
+				height: 400px;
+				background-size: auto;
+				background-repeat:no-repeat ;
+				background-position: right 20px;  
+			}
+			.login{
+				text-align: center;
+				font-size: 20px;
+				border: 1px solid ;
+			}
+		
 			.footer{
 				position: static;
-				margin-bottom: 0px;
+				margin-bottom: 200px;
 				margin-left: 0px;
 				margin-right: 0px;
-				line-height: 36px;
+				line-height: 40px;
 				text-align: center;
 				color: #b6b6b6;
 				background-color: #EFF4FA;
 				border-top: 1px solid #d6dfea;
+				margin-top: -70px;
 				
 				
+			}
+			#kuaisu{
+				float: left;
+				margin-left: 70px ;
+				margin-top: 15px;
+				font-size:14px ;
+				
+			
+			}
+			.z{
+				margin-top: 60px;
+				
+			}
+			.z input{
+				color: gray;
+				width: 250px;
+				height: 25px;
+			}
+			#checkbox{
+				margin-left: -90px;
+				font-size: 13px;
+			}
+			#login{
+				margin-top: 30px;
+				width: 180px;
+				height: 35px;
+				background-color: cornflowerblue;
+				color: white;
+			}
+			.ss{
+				float: right;
+				margin-top: 50px;
+				margin-right: 10px;
+			}
+			#a1{
+				height: 50px;
+				border-bottom: 1px solid #d6dfea;
+				background-color: #eff4fa;
 			}
 			
 			</style>
@@ -104,7 +190,7 @@
 			</div>
 		</div>
 			<div class="content">
-			<h1>欢迎进入项目管理系统</h1>
+			<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎进入项目管理系统</h1>
 			<div class="form">
 			<form action="ProjectsServlet" method="post">
 				项目名称 <input type="text" name="proname">
@@ -112,15 +198,10 @@
 				<input type="submit" value="查询">
 				
 			</form>
-			
+			 </div>
 			<div class="look">
 				项目一览  - ${requestScope.list.size()} - <a href="projectaddupdate.jsp" class="header_link_b">添加项目</a>
-			<br>
-			</div>
-			
-			
-				
-			
+			<br><br>
 			<table border="1px" cellspacing="0px">
 				<tr>
 					<th>NO.</th>
@@ -147,9 +228,9 @@
 				</tr>
 				</c:forEach>
 			</table>
-		
+		</div>
 			</div>
-			
+			 
 				</div>
 			<div class="footer">
 		<a href="#" class="header_link_a">关于我们</a>&nbsp;|&nbsp;
@@ -158,6 +239,6 @@
 		<a href="#" class="header_link_a">联系我们</a>&nbsp;|&nbsp;
 		<a href="#" class="header_link_a">帮助中心</a>&nbsp;|&nbsp;@2017-2017 Zzing95 Inc.All Rights Reserved.
 	</div>
-     </div>
+   
 </body>
 </html>
