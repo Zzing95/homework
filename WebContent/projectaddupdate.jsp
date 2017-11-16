@@ -132,7 +132,7 @@
 		<a href="#" class="header_link_a">服务条款</a>&nbsp;|&nbsp;
 		<a href="#" class="header_link_a">客服中心</a>&nbsp;|&nbsp;
 		<a href="#" class="header_link_a">联系我们</a>&nbsp;|&nbsp;
-		<a href="#" class="header_link_a">帮助中心</a>&nbsp;|&nbsp;@1998-2017 Tencent Inc.All Rights Reserved.
+		<a href="#" class="header_link_a">帮助中心</a>&nbsp;|&nbsp;@2017-2017 Zzing95 Inc.All Rights Reserved.
 	</div>
 			</div>
 </body>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!--配置Mybatis框架运行的环境-->
+<configuration>
+	<!-- Mybatis 起别名 -->
+	
+	<!-- 单个起别名方式 -->
+	
+	<typeAliases>
+	<!-- <typeAlias type="com.easy.model.LOL" alias="LOL"/> -->
+	
+	<!-- 批量起别名 -->
+		<package name="com.easy.model" />
+		
+	</typeAliases>
+	
+	
+	
+	<!-- 配置运行的JDBC连接DB的环境 -->
+	<environments default ="development" >
+	  <!-- 配置运行的子环境 -->
+		<environment id="development">
+		<!-- 使用JDBC事物处理 -->
+		<transactionManager type="JDBC"/>
+		<!-- 使用数据库连接池 -->
+		<dataSource type="POOLED">
+		<property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+		<property name="username" value="JAVA27"/>
+		<property name="password" value="123456"/>
+		
+		
+		
+		
+		</dataSource>
+		
+		
+		</environment>
+		
+	
+	
+	</environments>
+	<!-- 批量加载xml文件中的信息 -->
+		<mappers>
+		<package name="com.easy.mapper"/>
+		
+		
+		</mappers>
+	
+</configuration>

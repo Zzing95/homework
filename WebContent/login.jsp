@@ -202,7 +202,7 @@
 				
 				<div class="ss">
 					<a href="#" class="header_link_a">忘了密码？</a>&nbsp;|&nbsp;
-					<a href="#" class="header_link_a">意见反馈</a>
+					<a href="addUsers.jsp" class="header_link_a">注册账号</a>
 				</div>
 				</div>
 				
@@ -217,7 +217,7 @@
 		<a href="#" class="header_link_a">服务条款</a>&nbsp;|&nbsp;
 		<a href="#" class="header_link_a">客服中心</a>&nbsp;|&nbsp;
 		<a href="#" class="header_link_a">联系我们</a>&nbsp;|&nbsp;
-		<a href="#" class="header_link_a">帮助中心</a>&nbsp;|&nbsp;@1998-2017 Tencent Inc.All Rights Reserved.
+		<a href="#" class="header_link_a">帮助中心</a>&nbsp;|&nbsp;@2017-2017 Zzing95 Inc.All Rights Reserved.
 	</div>
 	
 		
