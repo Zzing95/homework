@@ -54,7 +54,38 @@
 				text-decoration: none;
 				
 			}
-			
+			.content{
+				width: 960px;
+				margin: 32px auto;
+				padding: 0px 24px ;
+				
+				
+			}
+			.content_wrapper{
+				min-height: 372px;
+				padding-top: 40px;
+				margin: 0px 20px 60px 25px;
+				margin-left: -400px;
+				
+			}
+			.login_container{
+				width: 600px;
+				height: 387px;
+				visibility: visible;
+				float: right;
+				border: 1px solid #a0b1c4;
+				background-color: #FFFFFF
+				position: relative;
+				padding: 0px;
+				border-radius: 5px;
+				overflow: hidden;
+				z-index: 12px;
+				text-align: center;
+				margin-top: -400px ;
+				font-size: 20px ;
+				
+				
+			}
 			
 			
 			.footer{
@@ -85,17 +116,23 @@
 				<a href="#" class="header_link_a">&nbsp;企业版</a>
 			</div>
 		</div>
+		    <div class="content">
+		<div class="content_wrapper">
+			<div class="login_pictures">
+				<div class="login_pictures_picture">
+					<img src="img/logo2.jpg"/>
+				</div>
+			</div>
+			<div class="login_container">
 			<c:if test="${empty requestScope.project}">
-				<h1>添加页面</h1>
+				<h1>添加项目</h1>
 			</c:if>
 			
 			
 			<c:if test="${not empty requestScope.project}">
-				<h1>更新页面</h1>
+				<h1>更新项目</h1>
 			</c:if>
 
-
-			<h1>项目管理</h1>
 			<form action="ProjectsServlet" method="post">
 			
 			<c:if test="${empty requestScope.project}">
@@ -127,13 +164,18 @@
 			<br><br>
 			<input type="submit" value="提   交">
 			</form>
-			<div class="footer">
-		<a href="#" class="header_link_a">关于我们</a>&nbsp;|&nbsp;
+			</div>
+			</div>
+			</div>
+			</div>
+		<div class="footer">
+		<a href="http://wpa.qq.com/msgrd?v=1&uin=546278244" class="header_link_a">关于我们</a>&nbsp;|&nbsp;
 		<a href="#" class="header_link_a">服务条款</a>&nbsp;|&nbsp;
 		<a href="#" class="header_link_a">客服中心</a>&nbsp;|&nbsp;
-		<a href="#" class="header_link_a">联系我们</a>&nbsp;|&nbsp;
+		<a href="http://wpa.qq.com/msgrd?v=1&uin=546278244" class="header_link_a">联系我们</a>&nbsp;|&nbsp;
 		<a href="#" class="header_link_a">帮助中心</a>&nbsp;|&nbsp;@2017-2017 Zzing95 Inc.All Rights Reserved.
 	</div>
-			</div>
+			
+			
 </body>
 </html>

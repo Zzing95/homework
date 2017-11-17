@@ -233,10 +233,10 @@
 			 
 				</div>
 			<div class="footer">
-		<a href="#" class="header_link_a">关于我们</a>&nbsp;|&nbsp;
+		<a href="http://wpa.qq.com/msgrd?v=1&uin=546278244" class="header_link_a">关于我们</a>&nbsp;|&nbsp;
 		<a href="#" class="header_link_a">服务条款</a>&nbsp;|&nbsp;
 		<a href="#" class="header_link_a">客服中心</a>&nbsp;|&nbsp;
-		<a href="#" class="header_link_a">联系我们</a>&nbsp;|&nbsp;
+		<a href="http://wpa.qq.com/msgrd?v=1&uin=546278244" class="header_link_a">联系我们</a>&nbsp;|&nbsp;
 		<a href="#" class="header_link_a">帮助中心</a>&nbsp;|&nbsp;@2017-2017 Zzing95 Inc.All Rights Reserved.
 	</div>
    

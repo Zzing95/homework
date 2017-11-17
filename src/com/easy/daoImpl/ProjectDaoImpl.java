@@ -19,10 +19,12 @@ public class ProjectDaoImpl implements ProjectDao{
 
 	@Override
 	public int add(Project project) {
+		//加载驱动
 		conn = JDBCTools.getConnection();
 		String sql = "insert into project values(seq_pro_id.nextval,?,to_date(?,'yyyy-mm-dd'),to_date(?,'yyyy-mm-dd'),?)";
 		int a = 0;
 		try {
+			//发送sql执行预编译
 			pstm = conn.prepareStatement(sql);
 			pstm.setString(1, project.getProname());
 			pstm.setString(2, project.getStart_time());
